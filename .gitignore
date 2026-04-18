@@ -1,0 +1,7 @@
+*.wav
+*.zip
+data/
+__pycache__/
+.venv/
+.env
+lecture_notes/
