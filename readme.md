@@ -1,7 +1,7 @@
 # AMP 2026 - Team J: Onset & Beat Tracking Project
 
 ## 1. Project Overview
-This repository contains the implementation for the Onset Detection (k12333590), Beat Tracking (Teammate 2), and Tempo Estimation (Teammate 3) components.
+This repository contains the implementation for the Onset Detection, Beat Tracking, and Tempo Estimation components.
 
 **Current Status:** Onset Detection (CNN) is finalized with a Cross-Validation F1-score of **0.8907**.
 
@@ -19,7 +19,7 @@ To ensure all modules align, please use the following parameters for all audio p
 
 ---
 
-## 3. Onset Detection (k12333590 - Diana)
+## 3. Onset Detection (Diana)
 We moved from a Spectral Flux baseline to a **3-Layer CNN** to improve robustness against noise and complex textures.
 
 ### Key Features:
@@ -36,19 +36,19 @@ We moved from a Spectral Flux baseline to a **3-Layer CNN** to improve robustnes
 
 ## 4. Roadmap & Team Tasks
 
-### ✅ Teammate 1: Onset Detection (Completed)
+### ✅ Onset Detection (Completed)
 - [x] Implement Log-Mel Spectrogram features.
 - [x] Train CNN model (`onset_cnn_v1.pth`).
 - [x] Optimize peak picking (Best Params: `delta=0.15`, `wait=3`).
 - [x] Export onset activations for Teammate 2.
 
-### ⏳ Teammate 2: Beat Tracking (Pending)
+### ⏳ Beat Tracking (Pending)
 - [ ] Load `_act.npy` files from `data/activations/`.
 - [ ] Implement Dynamic Programming (DP) or HMM-based beat tracking.
 - [ ] Sync beat periods with the 10ms hop length.
 - [ ] Evaluate against ground truth using `mir_eval.beat`.
 
-### ⏳ Teammate 3: Tempo Estimation (Pending)
+### ⏳ Tempo Estimation (Pending)
 - [ ] Extract global tempo (BPM) from the periodicity of the onset activation.
 - [ ] Implement ACL (Autocorrelation) or Comb Filter bank.
 - [ ] Handle "Double/Half Tempo" errors.
