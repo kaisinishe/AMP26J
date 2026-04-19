@@ -3,7 +3,7 @@
 ## 1. Project Overview
 This repository contains the implementation for the Onset Detection, Beat Tracking, and Tempo Estimation components.
 
-**Current Status:** Onset Detection (CNN) is finalized with a Cross-Validation F1-score of **0.8907**.
+**Current Status:** Onset Detection (CNN) is finalized with a Cross-Validation F1-score of **0.809**.
 
 ---
 
